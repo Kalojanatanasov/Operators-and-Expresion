@@ -1,0 +1,313 @@
+var result;
+var button1 = document.getElementById('Button1');
+button1.addEventListener('click',function () {
+  var number1 = parseInt(document.getElementById('myTextArea1').value,[10]);
+  var number2 = parseInt(document.getElementById('myTextArea11').value,[10]);
+ if( number1 > number2)
+  {  
+result = number2;
+number2 = number1;
+number1 = result;
+alert('We exchange the value so now number A is ' + number1 +' and respectivelly number B is: ' + number2);    }
+  else
+  {    alert("The number B: "+number2 +" is greater than number A: " + number1);  }
+
+},false);
+
+
+
+var button2 = document.getElementById('Button2');
+button2.addEventListener('click',function (e) {
+  var number1 = parseInt(document.getElementById('myTextArea2').value,[10]);
+  var number2 = parseInt(document.getElementById('myTextArea22').value,[10]);
+  var number3 = parseInt(document.getElementById('myTextArea222').value,[10]);
+ if( number1 > 0 && number2 >0 && number3 > 0)
+  {  alert('The sign of the product is positive!');    }
+ else if((number1 < 0 && number2 < 0 && number3 > 0)||(number1 > 0 && number2 < 0 && number3 < 0)||(number1 < 0 && number2 > 0 && number3 < 0))
+  {  alert('The sign of the product is positive!');    }
+else if((number1 < 0 && number2 < 0 && number3 < 0)||(number1 > 0 && number2 > 0 && number3 < 0)||(number1 > 0 && number2 < 0 && number3 > 0)||(number1 < 0 && number2 > 0 && number3 > 0))
+  {  alert('The sign of the product is negative!');    }
+else if(number1 == 0|| number2 == 0|| number3 == 0 )
+  {  alert('The sign of the product is null!');    }
+else
+{  alert('Please input correct values!');    }
+  e.preventDefault();
+},false);
+
+var button3 = document.getElementById('Button3');
+button3.addEventListener('click',function (e) {
+  var number1 = parseInt(document.getElementById('myTextArea3').value,[10]);
+  var number2 = parseInt(document.getElementById('myTextArea33').value,[10]);
+  var number3 = parseInt(document.getElementById('myTextArea333').value,[10]);
+if(isNaN(number1) ||isNaN(number2)|| isNaN(number3)   )
+{  alert('Input some numbers in the empty field/s/ or correct inputed values to number!');    }
+else
+{
+ if (number1 == number2 && number2 == number3)
+  {  alert('All numbers are equal!');    }
+ else
+{
+if(number1>number2 || number1==number2)
+{
+if(number1 > number3)
+{  alert('Number A = ' + number1 +" is biggest!");    }
+else
+{  alert('Number C = ' + number3 +' is biggest!');    }
+}
+
+else
+{
+if(number2 > number3 || number2 == number3)
+{  alert('Number B = ' + number2 +" is biggest!");    }
+else
+{  alert('Number C = ' + number3 +" is biggest!");    }
+}
+}
+}
+  e.preventDefault();
+},false);
+
+
+var button4 = document.getElementById('Button4');
+button4.addEventListener('click',function (e) {
+  var number1 = parseInt(document.getElementById('myTextArea4').value,[10]);
+  var number2 = parseInt(document.getElementById('myTextArea44').value,[10]);
+  var number3 = parseInt(document.getElementById('myTextArea444').value,[10]);
+if(isNaN(number1) ||isNaN(number2)|| isNaN(number3)   )
+{  alert('Input some numbers in the empty field/s/ or correct inputed values to number!');    }
+else
+{
+ if (number1 == number2 && number2 == number3)
+  {  alert('All numbers are equal!');    }
+ else
+{
+if(number1 > number2 || number1==number2)
+{
+if(number1 > number3 && number2 > number3)
+{  alert('Sorted number is ' + number1 + ' ' + number2 + ' '+ number3);    }
+else if(number1 < number3)
+{  alert('Sorted number is ' + number3 + ' ' + number1 + ' '+ number2);    }
+else 
+{  alert('Sorted number is ' + number1 + ' ' + number3 + ' '+ number2);    }
+}
+
+else
+{
+if(number1 > number3 || number1 == number3)
+{  alert('Sorted number is ' + number2 + ' ' + number1 + ' '+ number3);    }
+else if(number3 > number2)
+{  alert('Sorted number is ' + number3 + ' ' + number2 + ' '+ number1);    }
+else
+{  alert('Sorted number is ' + number2 + ' ' + number3 + ' '+ number1);    }
+}
+}
+}
+  e.preventDefault();
+},false);
+
+
+var button5 = document.getElementById('Button5');
+button5.addEventListener('click',function (e) {
+  var number1 = parseInt(document.getElementById('myTextArea5').value,[10]);
+if (number1 > 9 || number1 < 0 || isNaN(number1))
+{  alert('Please input ONE digit');    }
+switch (number1)
+            {
+                case 1: {alert("The name of input digit is one"); break;}
+                case 2: {alert("The name of input digit is two"); break;}
+                case 3: {alert("The name of input digit is three"); break;}
+                case 4: {alert("The name of input digit is four"); break;}
+                case 5: {alert("The name of input digit is five"); break;}
+                case 6: {alert("The name of input digit is six"); break;}
+                case 7: {alert("The name of input digit is seven"); break;}
+                case 8: {alert("The name of input digit is eight"); break;}
+                case 9: {alert("The name of input digit is nine"); break;}
+                case 0: {alert("The name of input digit is zero"); break;}
+                default: {alert("ERROR"); break;}
+            }
+
+  e.preventDefault();
+},false);
+
+
+var button6 = document.getElementById('Button6');
+button6.addEventListener('click',function (e) {
+  var number1 = parseInt(document.getElementById('myTextArea6').value,[10]);
+  var number2 = parseInt(document.getElementById('myTextArea66').value,[10]);
+  var number3 = parseInt(document.getElementById('myTextArea6666').value,[10]);
+if(isNaN(number1) ||isNaN(number2)|| isNaN(number3)   )
+{  alert('Input some numbers in the empty field/s/ or correct inputed values to number!');    }
+  
+  else
+{
+ result = ((number2*number2)-(4*number1*number3));
+if(result < 0)
+{ alert('The equation has no real roots!!!');}
+
+else
+{
+ if (result === 0)
+{ result = ((number2*number2)-(4*number1*number3));
+  var root = ((-1)*number2/(2*number1));
+alert("The equation has one double roots with value: " + root);}
+else{
+  result = ((number2*number2)-(4*number1*number3));
+var root1 = (-1*number2-Math.sqrt(result))/(2*number1);
+var root2 = (-1*number2+Math.sqrt(result))/(2*number1);
+alert("The equation has two roots with value: " + root1 +' and ' + root2); }
+}
+
+}
+  e.preventDefault();
+},false);
+
+
+
+var button7 = document.getElementById('Button7');
+button7.addEventListener('click',function (e) {
+  var number1 = parseInt(document.getElementById('myTextArea7').value,[10]);
+  var number2 = parseInt(document.getElementById('myTextArea77').value,[10]);
+  var number3 = parseInt(document.getElementById('myTextArea777').value,[10]);
+  var number4 = parseInt(document.getElementById('myTextArea7777').value,[10]);
+  var number5 = parseInt(document.getElementById('myTextArea77777').value,[10]);
+alert('Note that if two or more are equal(and are greaters than the others) the first that occur is the greatest!');
+if(isNaN(number1) ||isNaN(number2)|| isNaN(number3) || isNaN(number4) || isNaN(number5))
+{  alert('Input some numbers in the empty field/s/ or correct inputed values to number!');    }
+else if(number1 >= number2 && number1 >= number3 && number1 >= number4 && number1 >= number5)
+  { alert('Greatest one is first one, number A = ' + number1); }
+else if(number2 >= number1 && number2 >= number3 && number2 >= number4 && number2 >= number5)
+  { alert('Greatest one is second one, number B = ' + number2); }
+else if(number3 >= number1 && number3 >= number2 && number3 >= number4 && number3 >= number5)
+  { alert('Greatest one is third one, number C = ' + number3); }
+else if(number4 >= number1 && number4 >= number2 && number4 >= number3 && number4 >= number5)
+  { alert('Greatest one is fourth one, number D = ' + number4); }
+else if(number5 >= number1 && number5 >= number2 && number5 >= number3 && number5 >= number4)
+  { alert('Greatest one is fifth one, number E = ' + number5); }
+
+
+  e.preventDefault();
+},false);
+
+
+var button8 = document.getElementById('Button8');
+button8.addEventListener('click',function (e) {
+  var number1 = parseInt(document.getElementById('myTextArea8').value,[10]);
+var temp="";
+  var num1 = Math.floor(number1 / 100);
+           var num2 = Math.floor((number1 / 10)%10);
+            var num3 = Math.floor(number1 % 10);
+if(isNaN(number1) || number1 >= 1000 || number1 < 0)
+{  alert('Input some numbers in the empty field/s/ or correct inputed values to number!');    }
+else 
+{
+if(number1===0)
+{alert('Zero');}
+else
+{          
+                switch (num1)
+                {
+                    case 1: temp+=" One hundred";break;
+                    case 2: temp += " Two hunder";break;
+                    case 3: temp += " Three hunder";break;
+                    case 4: temp += " Four hunder";break;
+                    case 5: temp += " Five hunder";break;
+                    case 6: temp += " Six hunder";break;
+                    case 7: temp += " Seven hunder";break;
+                    case 8: temp += " Eight hunder";break;
+                    case 9: temp += " Nine hunder";break;
+                    case 0: temp += "";break;
+}
+ switch (num2)
+                {
+                    case 1:
+                        switch (num3)
+                        {
+                            case 1: temp += " eleven";break;
+                            case 2: temp += " twelve";break;
+                            case 3: temp += " thirteen";break;
+                            case 4: temp += " fourteen";break;
+                            case 5: temp += " fifteen";break;
+                            case 6: temp += " sixteen";break;
+                            case 7: temp += " seventeen";break;
+                            case 8: temp += " eighteen";break;
+                            case 9: temp += " nineteen";break;
+                            case 0: temp += " ten";break;
+                        } break;
+                    case 2: temp += " twenty";break;
+                    case 3: temp += " thirty";break;
+                    case 4: temp += " forty";break;
+                    case 5: temp += " fifty";break;
+                    case 6: temp += " sixty";break;
+                    case 7: temp += " seventy";break;
+                    case 8: temp += " eighty";break;
+                    case 9: temp += " ninety";break;
+                    case 0: switch (num3)
+                        {
+                            case 1: temp += " and one";break;
+                            case 2: temp += " and two";break;
+                            case 3: temp += " and three";break;
+                            case 4: temp += " and four";break;
+                            case 5: temp += " and five";break;
+                            case 6: temp += " and six";break;
+                            case 7: temp += " and seven";break;
+                            case 8: temp += " and eight";break;
+                            case 9: temp += " and nine";break;
+                            case 0: temp += "";break;
+                        } break;                      
+
+                }
+if (num2 !== 1 && num2 !== 0)
+                   switch (num3)
+                    {
+                        case 1: temp += " one";break;
+                       case 2: temp += " two";break;
+                        case 3: temp += " three";break;
+                        case 4: temp += " four";break;
+                     case 5: temp += " five";break;
+                        case 6: temp += " six";break;
+                        case 7: temp += " seven";break;
+                        case 8: temp += " eight";break;
+                        case 9: temp += " nine";break;
+                        case 0: temp += "";break;
+                    }
+else if(num2 ===0 && num1===0)
+{                         temp="";
+switch (num3)
+                    {
+
+                        case 1: temp += " one";break;
+                        case 2: temp += " two";break;
+                        case 3: temp += " three";break;
+                        case 4: temp += " four";break;
+                        case 5: temp += " five";break;
+                        case 6: temp += " six";break;
+                        case 7: temp += " seven";break;
+                        case 8: temp += " eight";break;
+                        case 9: temp += " nine";break;
+                        case 0: temp += "";break;
+                    }
+}
+
+alert(temp);
+
+}
+}
+  
+  e.preventDefault();
+},false);
+            
+
+
+           
+
+              
+             
+
+
+
+
+
+
+
+
+              
