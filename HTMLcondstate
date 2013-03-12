@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Operator and Expresion Task</title>
+
+</head>
+
+<body>
+<div>
+<strong>Task 1</strong>
+<p>Write an if statement that examines two integer variables and exchanges their values if the first one is greater than the second one.</p>
+<form name="Task1">
+Input number A:
+<input type=text name="item1" id="myTextArea1" > 
+Input number B:
+<input type=text name="item11" id="myTextArea11" > 
+<input type="button" value="Click Here" id="Button1">
+</form>
+</div>
+<div>
+<strong>Task 2</strong>
+<p>Write a script that shows the sign (+ or -) of the product of three real numbers without calculating it. Use a sequence of if statements.</p>
+<form name="Task2">
+Input number A:
+<input type=text name="item2" id="myTextArea2" > 
+Input number B:
+<input type=text name="item22" id="myTextArea22" > 
+Input number C:
+<input type=text name="item222" id="myTextArea222" > 
+<input type="button" value="Click Here" id="Button2">
+</form>
+</div>
+
+<div>
+<strong>Task 3</strong>
+<p>Write a script that finds the biggest of three integers using nested if statements.</p>
+<form name="Task3">
+Input number A:
+<input type=text name="item3" id="myTextArea3" > 
+Input number B:
+<input type=text name="item33" id="myTextArea33" > 
+Input number C:
+<input type=text name="item333" id="myTextArea333" > 
+<input type="button" value="Click Here" id="Button3">
+</form>
+</div>
+
+<div>
+<strong>Task 4</strong>
+<p>Sort 3 real values in descending order using nested if statements.</p>
+<form name="Task4">
+Input number A:
+<input type=text name="item4" id="myTextArea4" > 
+Input number B:
+<input type=text name="item44" id="myTextArea44" > 
+Input number C:
+<input type=text name="item444" id="myTextArea444" > 
+<input type="button" value="Click Here" id="Button4">
+</form>
+</div>
+
+<div>
+<strong>Task 5</strong>
+<p>Write script that asks for a digit and depending on the input shows the name of that digit (in English) using a switch statement.</p>
+<form name="Task5">
+Input ONE digit:
+<input type=text name="item5" id="myTextArea5" > 
+<input type="button" value="Click Here" id="Button5">
+</form>
+</div>
+
+<div>
+<strong>Task 6</strong>
+<p>Write a script that enters the coefficients a, b and c of a quadratic equation a*x2 + b*x + c = 0</p>
+<p>and calculates and prints its real roots. Note that quadratic equations may have 0, 1 or 2 real roots.</p>
+<form name="Task6">
+Input coef.A:
+<input type=text name="item6" id="myTextArea6" > 
+Input coef.B:
+<input type=text name="item6" id="myTextArea66" > 
+Input coef.C:
+<input type=text name="item6" id="myTextArea6666" > 
+<input type="button" value="Click Here" id="Button6">
+</form>
+</div>
+
+<div>
+<strong>Task 7</strong>
+<p>Write a script that finds the greatest of given 5 variables.</p>
+<form name="Task7">
+Input number A:
+<input type=text name="item7" id="myTextArea7" > 
+Input number B:
+<input type=text name="item7" id="myTextArea77" > 
+Input number C:
+<input type=text name="item7" id="myTextArea777" > 
+Input number D:
+<input type=text name="item7" id="myTextArea7777" > 
+Input number E:
+<input type=text name="item7" id="myTextArea77777" > 
+<input type="button" value="Click Here" id="Button7">
+</form>
+</div>
+
+
+<div>
+<strong>Task 8</strong>
+<p>Write a script that converts a number in the range [0...999] to a text</p>
+<p>corresponding to its English pronunciation. Examples: </p>
+<p>  0 &#8594 "Zero"</p>
+<p>	273 &#8594 "Two hundred seventy three"</p>
+<p>	400 &#8594 "Four hundred"</p>
+<p>	501 &#8594 "Five hundred and one"</p>
+<p>	711 &#8594 "Seven hundred and eleven"</p>
+<form name="Task8">
+Input number A:
+<input type=text name="item8" id="myTextArea8" > 
+<input type="button" value="Click Here" id="Button8">
+</form>
+</div>
+
+
+
+
+<script src="ConditionalStatements.js"></script>
+
+
+</body>
+</html>
