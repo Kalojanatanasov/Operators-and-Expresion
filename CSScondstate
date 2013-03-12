@@ -1,0 +1,17 @@
+body {
+    background-color: lightgray;
+    display:inline;
+    width:500px;
+    }
+
+div:nth-child(even) {
+    border: solid gray 2px;
+    background-color: lightgreen;
+    }
+
+div:nth-child(odd) {
+     border: solid gray 2px;
+    background-color: lightyellow;
+}
+
+//TO DO: additional customization
